@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Vazhi Aakkam</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
@@ -12,34 +12,86 @@
       box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
     }
+
     body {
-    
-      background: linear-gradient(135deg, #64b79b,#46466c, #8ab8be,#464687);
+      background: linear-gradient(135deg, #64b79b, #46466c, #8ab8be, #464687);
       color: #fff;
       line-height: 1.6;
       padding: 2rem;
     }
+
     h1 {
       text-align: center;
       font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Vazhi Aakkam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #64b79b, #46466c, #8ab8be, #464687);
+      color: #fff;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      text-align: center;
       margin-bottom: 2rem;
     }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
+    }
+
     .gallery {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2rem;
-}
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+      justify-items: center;
+      align-items: center;
+    }
 
     .gallery img {
-  width: 300px;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
     .gallery img:hover {
       transform: scale(1.05);
     }
+
     .lightbox {
       display: none;
       position: fixed;
@@ -52,27 +104,46 @@
       justify-content: center;
       align-items: center;
     }
+
     .lightbox img {
       max-width: 90%;
       max-height: 90%;
       border-radius: 1rem;
     }
+
+    /* Responsive styles */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .gallery {
+        grid-template-columns: 1fr;
+      }
+    }
   </style>
 </head>
 <body>
   <h1>OUR PORTFOLIO</h1>
+
   <nav>
     <a href="index.html">HOME</a> |
-    <a href="portfolio.html">PORTFOLIO</a>|
+    <a href="portfolio.html">PORTFOLIO</a> |
     <a href="blog.html">BLOG</a>
   </nav>
+
   <div class="gallery">
     <img src="image/startup launch.jpeg" alt="Startup Launch">
-    <img src="image/growth planning.jpeg " alt="Growth Planning">
-    <img src="image/student carrier guidence.jpeg" alt="Student Guidance">
-    <img src="image/branding and consulting.jpeg">
+    <img src="image/growth planning.jpeg" alt="Growth Planning">
+    <img src="image/student carrier guidence.jpeg" alt="Student Career Guidance">
+    <img src="image/branding and consulting.jpeg" alt="Branding and Consulting">
   </div>
-  
+
   <div class="lightbox" id="lightbox">
     <img src="" alt="Preview" id="lightbox-img">
   </div>
@@ -95,3 +166,4 @@
   </script>
 </body>
 </html>
+ 
