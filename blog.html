@@ -5,33 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vazhi Aakkam | Blog</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
- <!DOCTYPE html>
-
-  <title>BLOG</title>
-</head>
-<body>
-
-  <nav>
-    <a href="index.html">Home</a> |
-    <a href="portfolio.html">Portfolio</a> |
-    <a href="blog.html">Blog</a>
-  </nav>
-
-</body>
-</html>
-
- <style>
-    body {
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
       font-family: 'Poppins', sans-serif;
+    }
+
+    body {
       background: linear-gradient(135deg, #64b79b,#46466c, #8ab8be,#464687);
       color: #fff;
       padding: 2rem;
+      line-height: 1.6;
     }
 
     h1 {
       text-align: center;
       font-size: 3rem;
-      margin-bottom: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    nav {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ffd700;
     }
 
     .blog-post {
@@ -44,10 +53,11 @@
 
     h2 {
       color: #f9e79f;
+      margin-bottom: 1rem;
     }
 
     p {
-      line-height: 1.7;
+      margin-bottom: 1rem;
     }
 
     a {
@@ -60,11 +70,27 @@
       margin-top: 2rem;
     }
 
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+    }
   </style>
 </head>
 <body>
 
   <h1>Insights from Vazhi Aakkam</h1>
+
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="portfolio.html">Portfolio</a> |
+    <a href="blog.html">Blog</a>
+  </nav>
 
   <div class="blog-post">
     <h2>🚀 How to Launch a Startup in 2025</h2>
@@ -107,7 +133,6 @@
       🔹 Collaboration & Network access
     </p>
   </div>
-
 
 </body>
 </html>
