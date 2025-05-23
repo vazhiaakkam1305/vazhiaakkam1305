@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Vazhi Aakkam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+    
+      background: linear-gradient(135deg, #64b79b,#46466c, #8ab8be,#464687);
+      color: #fff;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    h1 {
+      text-align: center;
+      font-size: 3rem;
+      margin-bottom: 2rem;
+    }
+    .gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+    .gallery img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>OUR PORTFOLIO</h1>
+  <nav>
+    <a href="index.html">HOME</a> |
+    <a href="portfolio.html">PORTFOLIO</a>|
+    <a href="blog.html">BLOG</a>
+  </nav>
+  <div class="gallery">
+    <img src="image/startup launch.jpeg" alt="Startup Launch">
+    <img src="image/growth planning.jpeg " alt="Growth Planning">
+    <img src="image/student carrier guidence.jpeg" alt="Student Guidance">
+    <img src="image/branding and consulting.jpeg">
+  </div>
+  
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Preview" id="lightbox-img">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const images = document.querySelectorAll('.gallery img');
+
+    images.forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

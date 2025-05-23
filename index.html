@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vazhi Aakkam</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg,#3b3f4a,#59cdbf,#9b9bcf, #8ab8be,#464687);
+      color: #fff;
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 3rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header img {
+      width: 100px;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      font-weight: 600;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #e0f7fa;
+    }
+nav {
+  background: #222;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #17160f;
+}
+
+    section {
+      padding: 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #f5f5f5;
+    }
+
+    .services, .team-grid {
+      display: grid;
+      gap: 1.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
+    }
+
+    .card {
+      background: linear-gradient(145deg, #3b3f4a, #2d313c);
+      color: #f0f0f0;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      animation: float 2s ease-in-out infinite alternate;
+    }
+
+    .card:hover {
+      transform: translateY(-20px);
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    form {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    input, textarea, select, button {
+      padding: 0.8rem;
+      border: none;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: #0e0e0f;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #141314;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      from { transform: translateY(0); }
+      to { transform: translateY(-10px); }
+    }
+
+    a {
+      color: #111001;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Vazhi Aakkam Logo" style="height: 100px; margin-bottom: 20px;">
+    <h1>Vazhi Aakkam</h1>
+    <p>Crafting your path to success</p>
+  </header>
+  
+  <header>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="blog.html">Blog</a></li>
+
+    </ul>
+  </nav>
+
+</header>
+<section>
+  <h2 class="section-title">Who We Are</h2>
+  <p style="margin-bottom: 1rem;">
+    <strong>Vazhi Aakkam</strong> is a future-focused consulting and guidance firm that empowers emerging entrepreneurs and students to realize their full potential. We’re not just advisors — we’re builders, collaborators, and mentors who help bring ideas to life with clarity, creativity, and strategy.
+  </p>
+  <p style="margin-bottom: 1rem;">
+    Our mission is to provide personalized, practical, and transformative support that aligns with the vision of individuals and organizations. Whether you’re launching your first startup, pivoting your business, or planning your career as a student, our team is dedicated to helping you unlock your growth journey.
+  </p>
+  <p style="margin-bottom: 1rem;">
+    What sets us apart is our blend of <span class="highlight">startup agility</span> with <span class="highlight">strategic planning</span>, backed by a passionate team of domain experts. We believe success is not a straight path — it's a crafted one, and we walk with you every step of the way.
+  </p>
+ <ul style="margin-top: 1rem; margin-bottom: 1.5rem;">
+    <li> Vision-driven strategies with real-world results</li>
+
+    <li> Personalized coaching for entrepreneurs and students</li>
+
+    <li> In-depth expertise in branding, operations, finance, and growth</li>
+
+    <li> Hands-on support from concept to launch and beyond</li>
+  </ul>
+</ul>
+</section>
+   <section>
+    <h2 class="section-title">What We Offer</h2>
+    <div class="services">
+      <div class="card">
+        <h3>STARTUP LAUNCH SUPPORT</h3>
+        <p>From idea validation to go-to-market strategies.</p>
+      </div>
+      <div class="card">
+        <h3>BUSINESS CONSULTANCY</h3>
+        <p>Launch, grow, and optimize your business with expert guidance.</p>
+      </div>
+      <div class="card">
+        <h3>ENTREPRENEUR SUPPORT</h3>
+        <p>Mentorship and tools to turn your ideas into reality.</p>
+      </div>
+      <div class="card">
+        <h3>MASSIVE GROWTH PLANNING</h3>
+        <p>Scalable growth plans tailored to your market needs.</p>
+      </div>
+      <div class="card">
+        <h3>STUDENT CAREER GUIDANCE</h3>
+        <p>Helping students with personal, academic, and career development.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Our Team</h2>
+    <div class="team-grid">
+      <div class="card"><h3>SAKTHI MAHESHA</h3><p>Founder, Marketing & Branding Head</p></div>
+      <div class="card"><h3>KAVINAYA</h3><p>CEO, Startup Coach</p></div>
+      <div class="card"><h3>KARPAGAM</h3><p>Financial Advisor</p></div>
+      <div class="card"><h3>KARTHIKA</h3><p>Operations & Business Consultant</p></div>
+      <div class="card"><h3>ALAGU MONISHAA</h3><p>Designing</p></div>
+      <div class="card"><h3>ANISHA</h3><p>Client Relationship Manager</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="section-title">Book an Appointment</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <select required>
+        <option value="">Choose Service</option>
+        <option>Startup launch support</option>
+        <option>Startup Coaching</option>
+        <option>Growth Planning</option>
+        <option>Consultation Call</option>
+        <option>Student Career Guidance</option>
+      </select>
+      <input type="date" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Book Now</button>
+    </form>
+  </section>
+
+  <section>
+    <h2 class="section-title">Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required />
+      <input type="email" placeholder="Email Address" required />
+      <textarea rows="4" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+<section>
+  <h2 class="section-title">Feedback Form</h2>
+  <p>We value your feedback. Please fill out this form to help us improve our services.</p>
+
+  
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScMnphgk7ITcLGSy5fy1tnJEuLuSuhU_qV1EOTDIo-hYJzlNQ/viewform?embedded=true"
+   width="1366" height="1366" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+</section>
+<section>
+    <h2 class="section-title">Connect With Us</h2>
+    <p>Email: <a href="mailto:vazhi.aakkam05@gmail.com">vazhi.aakkam05@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/vazhi_aakkam">@vazhi_aakkam</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/company/vazhi-aakkam/">Vazhi Aakkam</a></p>
+  </section>
+<section>
+<footer>
+    &copy; 2025 Vazhi Aakkam. All rights reserved.
+  </footer>
+</body>
+</html>
